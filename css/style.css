@@ -1,3 +1,7 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
 }
+img{
+    max-width: 500px;
+    margin: 0 auto;
+}
