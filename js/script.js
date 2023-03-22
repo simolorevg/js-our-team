@@ -36,8 +36,23 @@ for(let i = 0; i < teamPeople.length; i++){
     console.log(currentPerson.name, currentPerson.task, currentPerson.imgSelf);
 };
 /////MILESTONE 2
-let teamList=document.getElementById('team-list');
+// let teamList=document.getElementById('team-list');
+// for(let x = 0; x < teamPeople.length; x++){
+//     let currentPerson = teamPeople[x];
+//     teamList.innerHTML += `<li>${currentPerson.name}, ${currentPerson.task}, ${currentPerson.imgSelf}</li>`;
+// }
+/////BONUS 1 AND 2
+let rowItems = document.querySelector('.row');
 for(let x = 0; x < teamPeople.length; x++){
     let currentPerson = teamPeople[x];
-    teamList.innerHTML += `<li>${currentPerson.name}, ${currentPerson.task}, ${currentPerson.imgSelf}</li>`;
+    rowItems.innerHTML += `<div class="col-4" style='border: 1px solid black;'>
+    <div class="card" style="width: 18rem;">
+        <img src="img/${currentPerson.imgSelf}" class="card-img-top" alt="">
+        <div class="card-body text-center">
+          <h5 class="card-title">${currentPerson.name}</h5>
+          <p class="card-text"><span class="fw-bold">Task: ${currentPerson.task} </span> </p>
+          <a href="#" class="btn btn-primary">See the CV</a>
+        </div>
+      </div>
+</div>`;
 }
