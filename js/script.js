@@ -42,17 +42,16 @@ for(let i = 0; i < teamPeople.length; i++){
 //     teamList.innerHTML += `<li>${currentPerson.name}, ${currentPerson.task}, ${currentPerson.imgSelf}</li>`;
 // }
 /////BONUS 1 AND 2
-let rowItems = document.querySelector('.row');
-for(let x = 0; x < teamPeople.length; x++){
+ let rowItems = document.getElementById('container-item');
+ for(let x = 0; x < teamPeople.length; x++){
     let currentPerson = teamPeople[x];
-    rowItems.innerHTML += `<div class="col-4" style='border: 1px solid black;'>
-    <div class="card" style="width: 18rem;">
+     rowItems.innerHTML += `
+     <div class="card" style="width: 18rem;">
         <img src="img/${currentPerson.imgSelf}" class="card-img-top" alt="">
         <div class="card-body text-center">
-          <h5 class="card-title">${currentPerson.name}</h5>
-          <p class="card-text"><span class="fw-bold">Task: ${currentPerson.task} </span> </p>
-          <a href="#" class="btn btn-primary">See the CV</a>
+           <h2 class="card-title">${currentPerson.name}</h2>
+           <p class="card-text"><span class="fw-bold">Task: </span>${currentPerson.task}</p>
+          <a href="#" class="btn btn-outline-dark">See the CV</a>
         </div>
-      </div>
-</div>`;
-}
+      </div>`;
+ }
