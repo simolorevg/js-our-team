@@ -12,21 +12,26 @@ const teamPeople=[
     {
         name: 'Walter Gordon' ,
         task: 'Office Manager',
-        imgSelf: ''
+        imgSelf: 'walter-gordon-office-manager.jpg'
     },
     {
-        name: '' ,
-        task: '',
-        imgSelf: ''
+        name: 'Angela Lopez' ,
+        task: 'Social Media Manager',
+        imgSelf: 'angela-lopez-social-media-manager.jpg'
     },
     {
-        name: '' ,
-        task: '',
-        imgSelf: ''
+        name: 'Scott Estrada' ,
+        task: 'Developer',
+        imgSelf: 'scott-estrada-developer.jpg'
     },
     {
-        name: '' ,
-        task: '',
-        imgSelf: ''
+        name: 'Barbara Ramos' ,
+        task: 'Graphic Designer',
+        imgSelf: 'barbara-ramos-graphic-designer.jpg'
     }
-]
+];
+/////MILESTONE 1
+for(let i = 0; i < teamPeople.length; i++){
+    currentPerson = teamPeople[i];
+    console.log(currentPerson.name, currentPerson.task, currentPerson.imgSelf);
+}
