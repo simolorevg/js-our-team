@@ -32,6 +32,12 @@ const teamPeople=[
 ];
 /////MILESTONE 1
 for(let i = 0; i < teamPeople.length; i++){
-    currentPerson = teamPeople[i];
+    let currentPerson = teamPeople[i];
     console.log(currentPerson.name, currentPerson.task, currentPerson.imgSelf);
+};
+/////MILESTONE 2
+let teamList=document.getElementById('team-list');
+for(let x = 0; x < teamPeople.length; x++){
+    let currentPerson = teamPeople[x];
+    teamList.innerHTML += `<li>${currentPerson.name}, ${currentPerson.task}, ${currentPerson.imgSelf}</li>`;
 }
